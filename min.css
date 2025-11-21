@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #ffffff;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 6%;
+    background: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 20;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 700;
+}
+.logo span {
+    color: #b8864f;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 28px;
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #333;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 150px 6% 80px;
+    gap: 40px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.hero-text p {
+    margin: 18px 0 30px;
+    font-size: 18px;
+    color: #555;
+}
+
+.hero-img img {
+    width: 480px;
+    max-width: 100%;
+    border-radius: 14px;
+}
+
+/* BUTTON */
+.btn {
+    padding: 14px 26px;
+    background: #b8864f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+/* PRODUCTS */
+.products {
+    padding: 90px 6%;
+    text-align: center;
+}
+
+.product-grid {
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background: #fff;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+.price {
+    font-weight: 600;
+    color: #b8864f;
+    margin-top: 10px;
+}
+
+/* ABOUT */
+.about {
+    padding: 90px 6%;
+    text-align: center;
+    background: #f6f5f3;
+}
+
+.about p {
+    max-width: 720px;
+    margin: auto;
+    line-height: 1.8;
+    color: #444;
+}
+
+/* CONTACT */
+.contact {
+    padding: 90px 6%;
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 22px;
+    margin-top: 50px;
+    color: #777;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 6%;
+        width: 65%;
+        background: white;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0px 4px 14px rgba(0,0,0,0.1);
+        gap: 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .hero-text h1 {
+        font-size: 30px;
+    }
+}
